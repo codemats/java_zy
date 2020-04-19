@@ -1,0 +1,7 @@
+
+Synchronzied和Lock有什么不同点？
+1.sync是JVM层面，Lock是jdk层面，是个具体的类
+2.sync不需要释放锁，lock需要释放锁
+3.sync不可中断，Lock可以中断
+4.sync是非公平锁，Lock两者皆可，默认非公平锁，初始化设置true为公平锁
+5.sync无条件，Lock可以有条件
