@@ -38,7 +38,7 @@ import java.util.concurrent.TimeUnit;
  *         代码是否有问题
  *
  */
-public class TestMain {
+public class CPUBGMain {
     public static void main(String[] args) throws InterruptedException {
         while(true){
             System.out.println("haha...");
