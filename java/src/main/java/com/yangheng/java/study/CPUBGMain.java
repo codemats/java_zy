@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  * 生产环境CPU占用过高，怎么办？-----真实的查看的还是栈中数据，即最后使用jstack查看导致CPU的标高的线程
  * 1.jps -l 查看当前运行项目的代码，记下pid
  * 2.top 查看当前1步骤的pid，再查看CPU的使用率
- * 3.ps -mp pid -o THREAD,tie,time查看导致CPU标高的具体pid(简称P)
+ * 3.ps -mp pid -o THREAD,tid,time查看导致CPU标高的具体pid(简称P)
  *       m:线程
  *       p：CPU时间
  * 4.把P的值转换成16进制的值，简称(H)
